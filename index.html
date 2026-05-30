@@ -1,0 +1,184 @@
+!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chevi Winter Cap</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f9f0e8;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.container{
+width:1000px;
+background:#fff8f3;
+padding:40px;
+border-radius:20px;
+text-align:center;
+}
+
+/* Animasi berbeda beda */
+.judul{
+animation:geser 3s infinite alternate;
+}
+
+.subjudul{
+animation:naikturun 2s infinite;
+}
+
+.gambar{
+width:400px;
+animation:putar 4s infinite ease-in-out;
+}
+
+.des1{
+animation:kiri 3s infinite alternate;
+}
+
+.des2{
+animation:kanan 3s infinite alternate;
+}
+
+.des3{
+animation:naikturun 2.5s infinite;
+}
+
+.harga{
+animation:zoom 2s infinite;
+}
+
+.tombol{
+animation:denyut 1.5s infinite;
+}
+
+/* Keyframes */
+@keyframes geser{
+from{transform:translateX(-20px);}
+to{transform:translateX(20px);}
+}
+
+@keyframes naikturun{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+@keyframes putar{
+0%{transform:rotate(0deg);}
+50%{transform:rotate(5deg);}
+100%{transform:rotate(0deg);}
+}
+
+@keyframes kiri{
+from{transform:translateX(-15px);}
+to{transform:translateX(15px);}
+}
+
+@keyframes kanan{
+from{transform:translateX(15px);}
+to{transform:translateX(-15px);}
+}
+
+@keyframes zoom{
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
+}
+
+@keyframes denyut{
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
+}
+
+h1{
+font-size:80px;
+color:#a11111;
+}
+
+h2{
+color:#7b1f29;
+font-style:italic;
+margin-bottom:20px;
+}
+
+.box{
+display:flex;
+justify-content:space-around;
+margin-top:30px;
+}
+
+.item{
+width:30%;
+background:white;
+padding:15px;
+border-radius:15px;
+}
+
+.price{
+font-size:40px;
+color:#a11111;
+font-weight:bold;
+margin:20px;
+}
+
+button{
+background:#a11111;
+color:white;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1 class="judul">WINTER CAP</h1>
+
+<h2 class="subjudul">Cute, Warm, Aesthetic</h2>
+
+<img src="topi.jpeg" class="gambar">
+
+<div class="box">
+
+<div class="item des1">
+<h3>DESAIN PLAID KLASIK</h3>
+<p>Super aesthetic dan timeless.</p>
+</div>
+
+<div class="item des2">
+<h3>NYAMAN & HANGAT</h3>
+<p>Bahan lembut premium.</p>
+</div>
+
+<div class="item des3">
+<h3>DETAIL LUCU & UNIK</h3>
+<p>Bikin outfit makin standout.</p>
+</div>
+
+</div>
+
+<div class="price harga">Rp.185.000</div>
+
+<button class="tombol">ORDER NOW</button>
+
+</div>
+
+</body>
+</html>
